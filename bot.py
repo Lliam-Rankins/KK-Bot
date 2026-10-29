@@ -3,7 +3,7 @@ import os
 import sys
 import discord
 from dotenv import load_dotenv
-from link_transformer import transform_urls
+from link_transformer import format_message, transform_urls
 
 logging.basicConfig(
     level=logging.INFO,
@@ -38,7 +38,7 @@ async def on_message(message: discord.Message) -> None:
     if not links:
         return
 
-    reply_content = "\n".join(links)
+    reply_content = format_message(links)
     try:
         await message.reply(reply_content, mention_author=False)
         logger.info(

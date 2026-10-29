@@ -1,12 +1,12 @@
 # KK-Bot
 
-A Discord bot that monitors messages for Instagram and TikTok links. It replies to the message with embed-friendly `kkinstagram.com` and `kktiktok.com` links.
+A Discord bot that monitors messages for Instagram and TikTok links. It replies to the message with embed-friendly masked links (`[Fixed Embed](https://www.kkclip.com/...)`).
 
 ## Features
 
-- Converts Instagram links (`instagram.com`) to `www.kkinstagram.com`.
-- Converts standard TikTok links (`tiktok.com`) to `www.kktiktok.com`.
-- Converts short TikTok links (`vm.tiktok.com`, `vt.tiktok.com`) to `vm.kktiktok.com`.
+- Converts Instagram links (`instagram.com`) to `www.kkclip.com`.
+- Converts standard TikTok links (`tiktok.com`) to `www.kkclip.com`.
+- Converts short TikTok links (`vm.tiktok.com`, `vt.tiktok.com`) to `www.kkclip.com`.
 - Strips URL tracking parameters (e.g., `?igsh=...`, `?_t=...`).
 - Replies directly to the original message without pinging the author (`mention_author=False`).
 - Deduplicates identical links sent in the same message.
